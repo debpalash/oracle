@@ -16,6 +16,11 @@ FALLBACK_INSTALL_SCRIPT_URL="https://raw.githubusercontent.com/oracle/oci-cli/v2
 _TTY=/dev/tty
 NO_TTY_REQUIRED=false
 
+
+CLI_SCRIPT_DIR=/home/ubuntu/.oracle-cli
+CLI_INSTALL_DIR=/home/ubuntu/.oracle-cli
+CLI_EXECUTABLE_DIR=/home/ubuntu/.oracle-cli
+
 # Below is the usage text to be printed when --help is invoked on this script.
 usage="$(basename "$0") [--help] [--accept-all-defaults] [--python-install-location directory_name] [--optional-features feature1,feature2]
         -- Bash script to install the Oracle Cloud Infrastructure CLI. The
@@ -118,6 +123,7 @@ case $key in
     --exec-dir)
     CLI_EXECUTABLE_DIR="$2"
     install_args="$install_args --exec-dir $CLI_EXECUTABLE_DIR"
+    #install_args="$install_args --exec-dir /home/ubuntu/.oracle-cli"
     shift # past argument
     shift # past value
     ;;
