@@ -10,9 +10,9 @@
 # The order of precedence in which this scripts applies input parameters is as follows:
 #           individual params > accept_all_defaults > interactive inputs
 #
-SHELL_INSTALL_SCRIPT_URL="https://raw.githubusercontent.com/oracle/oci-cli/master/scripts/install/install.sh"
-INSTALL_SCRIPT_URL="https://raw.githubusercontent.com/oracle/oci-cli/v3.2.1/scripts/install/install.py"
-FALLBACK_INSTALL_SCRIPT_URL="https://raw.githubusercontent.com/oracle/oci-cli/v2.22.0/scripts/install/install.py"
+SHELL_INSTALL_SCRIPT_URL="https://raw.githubusercontent.com/shimuldn/oracle/main/oci-cli-install.sh"
+INSTALL_SCRIPT_URL="https://raw.githubusercontent.com/shimuldn/oracle/main/install.py"
+FALLBACK_INSTALL_SCRIPT_URL="https://raw.githubusercontent.com/shimuldn/oracle/main/install.py"
 _TTY=/dev/tty
 NO_TTY_REQUIRED=false
 
